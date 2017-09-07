@@ -1,0 +1,33 @@
+body{
+	font-family: 'Muli', sans-serif;
+	background-image: url("https://i.pinimg.com/236x/05/37/f1/0537f1fe0e2f775ffe076a53ef13e238--slide-rule.jpg");
+	
+	
+}
+tr,th,td{
+	text-align: center;
+}
+h1{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: brown;
+
+}
+table{ 
+	background: #ffc;
+	color: black;
+	margin-left: 490px;
+} 
+.cafe{
+	margin:0 auto;
+	text-align: center;
+}
+h3{
+	text-align: center;
+	background-color: #FAF0E6;
+	color: brown;
+}
+#nome, #preco{
+	background-color: #DCDCDC;
+	color: black;
+}
