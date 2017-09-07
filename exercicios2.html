@@ -1,9 +1,12 @@
- <!doctype>
+ <!doctype html>
 	<html>
 		<head>
-		<title>Pingadinho</title>
-		<script src="./jquery-3.2.1.js"></script>
-		<script src="./produtos.js"></script>
+		<title>Cafeteria CEFET</title>
+		<link rel="stylesheet" href="cafeteria.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+		<script src="./js/jquery-3.2.1.js"></script>
+		<script src="./js/produtos.js"></script>
 		<script>
 			$(function(){
 				plotarCardapio();
@@ -38,7 +41,6 @@
 				.append("<tr><td>"+item.quantidade+"</td><td>"+item.produto.nome+"</td><td>"+item.produto.preco+"</td><td>"+"<button id=\"item_"+item.produto.id+"\"class=\"remover\">-</button></td></tr>")
 				});
 			}
-
 			function botaoDeAdc(){
 				$('.adicionar').bind('click', function(){
 					var id = $(this).attr('id');
@@ -148,17 +150,22 @@
 		</script>
 		</head>
 		<body>
-
-			Produto <input type="text" name="nome" id="nome" />
-			Preço do Produto <input type="number" name="preco" id="preco" />
-				<button id="btn"> Adicionar </button>
-
+			
+			<h1> Bem-vindo a Cafeteria CEFET! </h1>
+			<h3> Adicione um produto ao cardápio </h3>
+			<div class="cafe">
+				<strong> Produto <input type="text" name="nome" id="nome" /> </strong>
+				<strong> Preço do Produto <input type="number" name="preco" id="preco" /> </strong>
+					<button id="btn"> Adicionar </button> <br/> <br/>
+			</div>
+			
+			<h3> Cardápio </h3>
 			<table border="1">
 				<thead>
 					<tr>
 						<th>Nomes</th>
 						<th>Preços</th>
-						<th></th>
+						<th>Adicionar</th>
 					</tr>		
 				</thead>
 				<tbody class="produto">
@@ -171,16 +178,16 @@
 						<th>Quantidade</th>
 						<th>Produto</th>
 						<th>Preço Unitário</th>
-						<th></th>
+						<th>Remover</th>
 					</tr>		
-				</thead>
+				</thead> <br/> 
 				<tbody class="pedid">
-					
+				
+				<h3> Pedido </h3>
 				</tbody>
 				<tfoot>
 					<th>Total:</th>
 				<tfoot>
 			</table>
-			
 		</body>
 	</html>
